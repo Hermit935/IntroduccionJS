@@ -8,11 +8,12 @@ function sumar () {
 sumar ();
 
 // Exprecion de la funcion
+sumar2 ();
 const sumar2 = function () {
     console.log(3+3);
 }
 
-sumar2 ();
+
 
 
 // IIFE
