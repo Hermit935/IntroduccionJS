@@ -5,10 +5,14 @@ const reproductor = {
     }, 
     pausar: function(){
      console.log('pausando...')
+    },
+    crearPlaylist: function(nombre) {
+        console.log(`Creando playlist: ${nombre}`)
+    },
+    reoroducirPlaylist: function(nombre) {
+        console.log(`Reproduciendo playlist: ${nombre}`)
     }
-    crearPlaylist:
 }
-
 
 reproductor.borrarCancion = function (id){
     console.log(`Eliminando la cancion: ${id}`)
@@ -17,3 +21,5 @@ reproductor.borrarCancion = function (id){
 reproductor.reproducir(3840);
 reproductor.pausar();
 reproductor.borrarCancion(3840);
+reproductor.crearPlaylist('Heavy Metal');
+reproductor.reoroducirPlaylist('Heavy Metal');
