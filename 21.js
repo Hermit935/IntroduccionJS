@@ -30,28 +30,22 @@ meses.forEach (mes => {
     
 });
 
-// Includes 
-let resultado = meses.includes('Marzo');
+let resultado
 
 // Some ideal para arreglo de objetos
-resultado = carrito.some (function(producto) {
-    return producto.nombre === 'Celular'
-})
+resultado = carrito.some (producto => producto.nombre === 'Celular');
+
 
 
 // Reduce
-resultado = carrito.reduce(function(total, producto) {
-    return total + producto.precio
-}, 0);
+resultado = carrito.reduce((total,producto) =>  total + producto.precio, 0);
+
 
 
 // Filter 
-resultado = carrito.filter (function(producto){
-    return producto.precio > 400
-});
+resultado = carrito.filter (producto => producto.precio > 400);
 
-    resultado = carrito.filter (function(producto){
-        return producto.nombre !== 'Celular'
-});
+
+resultado = carrito.filter (producto => producto.nombre !== 'Celular');
 
 console.log(resultado);
